@@ -17,7 +17,7 @@ public class App {
 		
 		Student student2 = new Student();
 		student2.setId(102);
-		student2.setName("Narendra");
+		
 		student2.setCity("");
 		List<Student> students=Arrays.asList(student1,student2);
 		//--Feature of java 8
@@ -25,6 +25,10 @@ public class App {
 			
 			if(StringUtils.isBlank(student.getCity())) {
 				System.out.println("City cannot be blank.");
+			}
+			
+			if(StringUtils.isBlank(student.getName())) {
+				System.out.println("Name cannot be blank.");
 			}
 		});
 		
